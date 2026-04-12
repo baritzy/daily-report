@@ -3,188 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>דוח בוקר יומי — 12 באפריל 2026</title>
+    <title>דוח בוקר יומי — 12 באפריל 2026 (ערב)</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            min-height: 100vh;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #1a1a2e;
-        }
-
-        .date {
-            font-size: 0.85rem;
-            color: #666;
-            letter-spacing: 0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 0.25rem;
-        }
-
-        .subtitle {
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        .section {
-            background: #111118;
-            border: 1px solid #1a1a2e;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .section h2 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .section h2 .icon {
-            font-size: 1.1rem;
-        }
-
-        .item {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid #1a1a2e;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .item-title {
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .item-detail {
-            color: #888;
-            margin-top: 0.2rem;
-        }
-
-        .status {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; padding: 2rem 1rem; }
+        .container { max-width: 720px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #1a1a2e; }
+        .date { font-size: 0.85rem; color: #666; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+        h1 { font-size: 1.6rem; font-weight: 600; color: #fff; margin-bottom: 0.25rem; }
+        .subtitle { font-size: 0.9rem; color: #555; }
+        .section { background: #111118; border: 1px solid #1a1a2e; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.25rem; }
+        .section h2 { font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .section h2 .icon { font-size: 1.1rem; }
+        .item { padding: 0.6rem 0; border-bottom: 1px solid #1a1a2e; font-size: 0.9rem; line-height: 1.5; }
+        .item:last-child { border-bottom: none; padding-bottom: 0; }
+        .item-title { color: #fff; font-weight: 500; }
+        .item-detail { color: #888; margin-top: 0.2rem; }
+        .status { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
         .status-done { background: #0a2e1a; color: #4ade80; }
         .status-progress { background: #2e2a0a; color: #facc15; }
         .status-todo { background: #1a1a2e; color: #818cf8; }
         .status-alert { background: #2e0a0a; color: #f87171; }
-
-        .metric-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #1a1a2e;
-        }
-
+        .metric-row { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid #1a1a2e; }
         .metric-row:last-child { border-bottom: none; }
-
         .metric-label { color: #888; font-size: 0.85rem; }
         .metric-value { color: #fff; font-weight: 600; font-size: 0.95rem; }
-
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #1a1a2e;
-            font-size: 0.75rem;
-            color: #444;
-        }
-
-        @media (max-width: 600px) {
-            body { padding: 1rem 0.75rem; }
-            .section { padding: 1.25rem; }
-            h1 { font-size: 1.3rem; }
-        }
+        footer { text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #1a1a2e; font-size: 0.75rem; color: #444; }
+        @media (max-width: 600px) { body { padding: 1rem 0.75rem; } .section { padding: 1.25rem; } h1 { font-size: 1.3rem; } }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="date">יום שבת, 12 באפריל 2026</div>
+            <div class="date">יום שבת, 12 באפריל 2026 — עדכון ערב</div>
             <h1>דוח בוקר</h1>
             <div class="subtitle">ABC-TOM System v8</div>
         </header>
 
         <div class="section">
-            <h2><span class="icon">&#127769;</span> מה קרה בלילה</h2>
+            <h2><span class="icon">&#127769;</span> מה נעשה היום</h2>
             <div class="item">
-                <span class="item-title">סשן לילי של The Biz רץ (בעיכוב — הועבר לבוקר)</span>
-                <div class="item-detail">הטריגרים הלילים לא עבדו 3 ימים כי רצו בענן בלי גישה לקבצים מקומיים. תוקן — עוברים ל-Windows Task Scheduler מקומי.</div>
+                <span class="item-title">The Biz — סשן מלא (בוקר + ערב)</span>
+                <div class="item-detail">&#9989; מחקר validation עמוק — ביקוש מוכח, 153K ב-r/vibecoding, 8 מתחרים</div>
+                <div class="item-detail">&#9989; עיצוב Sidekick — 5 agents (Buddy, Builder, Guardian, Explainer, Launcher)</div>
+                <div class="item-detail">&#9989; Product spec — $29, 4 תסריטי וידאו, תוכנית בנייה</div>
+                <div class="item-detail">&#9989; Landing page חדש — Starter Kit (לא newsletter), 9 סקשנים, premium design</div>
+                <div class="item-detail">&#9989; יישור עיצוב — product spec + agent design מסונכרנים על 5 agents</div>
+                <div class="item-detail">&#9989; מחקר דפי נחיתה — patterns מהמתחרים</div>
             </div>
             <div class="item">
-                <span class="item-title">3 סוכנים עבדו במקביל על The Biz:</span>
-                <div class="item-detail">A) מחקר validation עמוק — 153K חברים ב-r/vibecoding, 8 מתחרים בתשלום, ביקוש אמיתי ומוכח</div>
-                <div class="item-detail">B) עיצוב מערכת agents מקורית — "Sidekick" (5 agents: Buddy, Builder, Guardian, Explainer, Launcher)</div>
-                <div class="item-detail">C) Product spec — Starter Kit ב-$29, 4 תסריטי וידאו, תוכנית 3 שבועות</div>
+                <span class="item-title">תשתית — תיקונים</span>
+                <div class="item-detail">&#9989; גילוי + תיקון: טריגרים רימוטיים לא עובדים על קבצים מקומיים</div>
+                <div class="item-detail">&#9989; עבודה עוברת ל-Windows Task Scheduler מקומי</div>
+                <div class="item-detail">&#9989; דוח בוקר HTML עובד (GitHub Pages + טלגרם)</div>
             </div>
         </div>
 
         <div class="section">
             <h2><span class="icon">&#128204;</span> סטטוס פרויקטים</h2>
-
             <div class="item">
                 <span class="item-title">The Biz / Sidebuild</span>
                 <span class="status status-progress">Wave 2 — בנייה</span>
-                <div class="item-detail">שם: Sidebuild. מוצר: Vibe Coding Starter Kit ($29). מערכת agents: Sidekick. מחקר + עיצוב הושלמו. הצעד הבא: בניית ה-kit בפועל.</div>
+                <div class="item-detail">מוצר: Starter Kit ($29 ZIP). עיצוב + landing page מוכנים. הצעד הבא: לבנות את ה-kit בפועל (5 agent files + guides + bonus).</div>
             </div>
-
             <div class="item">
                 <span class="item-title">Fund Compare / שווה</span>
                 <span class="status status-progress">פעיל</span>
-                <div class="item-detail">שם: "שווה". לוגו חדש. תשואות 3/5 שנים ל-TA-125 מ-yfinance. באגי QA תוקנו. ממתין: העשרת תשואות לשאר המדדים + deploy.</div>
+                <div class="item-detail">ממתין: העשרת תשואות + QA + deploy.</div>
             </div>
-
             <div class="item">
                 <span class="item-title">Quiflotz</span>
                 <span class="status status-done">v0-stable</span>
-                <div class="item-detail">GSAP + סאונד עובדים. אין פעילות שוטפת.</div>
+                <div class="item-detail">אין פעילות שוטפת.</div>
             </div>
-
             <div class="item">
                 <span class="item-title">SubTracker</span>
                 <span class="status status-todo">ממתין</span>
-                <div class="item-detail">v3.2.0 stable. Kotlin native. ממתין לסיבוב פיתוח הבא.</div>
-            </div>
-
-            <div class="item">
-                <span class="item-title">Mom's Recipes</span>
-                <span class="status status-done">פעיל</span>
-                <div class="item-detail">Google Sheets כ-CMS. עובד.</div>
+                <div class="item-detail">v3.2.0 stable. ממתין לסיבוב פיתוח.</div>
             </div>
         </div>
 
@@ -195,12 +90,8 @@
                 <span class="metric-value">5</span>
             </div>
             <div class="metric-row">
-                <span class="metric-label">טריגרים מרוחקים</span>
-                <span class="metric-value">3 (מועברים למקומי)</span>
-            </div>
-            <div class="metric-row">
-                <span class="metric-label">The Biz — קבצי output</span>
-                <span class="metric-value">12 מסמכים</span>
+                <span class="metric-label">The Biz — מסמכי output</span>
+                <span class="metric-value">14 מסמכים</span>
             </div>
             <div class="metric-row">
                 <span class="metric-label">תקציב The Biz</span>
@@ -209,18 +100,18 @@
         </div>
 
         <div class="section">
-            <h2><span class="icon">&#127919;</span> תוכנית להיום</h2>
+            <h2><span class="icon">&#127919;</span> הצעד הבא</h2>
             <div class="item">
-                <span class="item-title">1. The Biz — להתחיל בנייה</span>
-                <div class="item-detail">לבנות את ה-Sidekick agent folder בפועל (5 agents + CLAUDE.md + folder structure). זה הליבה של המוצר.</div>
+                <span class="item-title">1. The Biz — לבנות את ה-kit</span>
+                <div class="item-detail">5 קבצי agents (buddy.md, builder.md, guardian.md, explainer.md, launcher.md) + CLAUDE.md + bonus idea generator. זו הליבה.</div>
             </div>
             <div class="item">
-                <span class="item-title">2. Fund Compare — QA + deploy</span>
-                <div class="item-detail">להריץ QA מלא על הלוגו + תשואות 3/5 שנים, ולדפלי אם הכל תקין.</div>
+                <span class="item-title">2. תסריטי וידאו</span>
+                <div class="item-detail">לכתוב תסריטים מפורטים ל-4 סרטונים שאיתן יפיק.</div>
             </div>
             <div class="item">
-                <span class="item-title">3. תשתית — הקמת local cron</span>
-                <div class="item-detail">להעביר Night Work + Daily Report מטריגרים רימוטיים ל-Windows Task Scheduler.</div>
+                <span class="item-title">3. תשתית — Windows Task Scheduler</span>
+                <div class="item-detail">להקים cron מקומי לסשן לילי + דוח בוקר.</div>
             </div>
         </div>
 
@@ -228,18 +119,17 @@
             <h2><span class="icon">&#9888;&#65039;</span> התראות</h2>
             <div class="item">
                 <span class="status status-alert">חשוב</span>
-                <span class="item-title"> טריגרים רימוטיים לא עובדים על קבצים מקומיים</span>
-                <div class="item-detail">Night Work + Daily Report רצו 3 ימים בענן ללא תוצאות. עוברים ל-Windows Task Scheduler. המחשב חייב להישאר דלוק.</div>
+                <span class="item-title"> Windows Task Scheduler עדיין לא הוקם</span>
+                <div class="item-detail">סשן לילי + דוח בוקר לא רצים אוטומטית. המחשב דלוק אבל אין scheduler.</div>
             </div>
             <div class="item">
                 <span class="status status-todo">תזכורת</span>
                 <span class="item-title"> GitHub Token פג ב-2026-05-10</span>
-                <div class="item-detail">fine-grained token של baritzy. לחדש לפני ה-10 במאי.</div>
             </div>
         </div>
 
         <footer>
-            Generated by Adam &middot; ABC-TOM System v8 &middot; 12/04/2026
+            Generated by Adam &middot; ABC-TOM System v8 &middot; 12/04/2026 evening
         </footer>
     </div>
 </body>
