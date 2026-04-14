@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>דוח בוקר יומי — 13 באפריל 2026</title>
+    <title>דוח בוקר יומי — 14 באפריל 2026</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; padding: 2rem 1rem; }
@@ -35,24 +35,23 @@
 <body>
     <div class="container">
         <header>
-            <div class="date">יום שני, 13 באפריל 2026</div>
+            <div class="date">יום שלישי, 14 באפריל 2026</div>
             <h1>דוח בוקר</h1>
             <div class="subtitle">ABC-TOM System v8</div>
         </header>
 
         <div class="section">
-            <h2><span class="icon">&#127769;</span> מה נעשה בלילה (סשן 7)</h2>
+            <h2><span class="icon">&#127769;</span> מה קרה מאתמול</h2>
             <div class="item">
-                <span class="item-title">The Biz / Sidebuild — 4 תוצרים חדשים</span>
-                <div class="item-detail">&#9989; Quick Start Guide — 627 שורות, 9 פרקים, מ-install עד אפליקציה ראשונה</div>
-                <div class="item-detail">&#9989; Deploy Playbook — 3 מסלולים (Netlify / Netlify+Supabase / Fly.io)</div>
-                <div class="item-detail">&#9989; תסריט וידאו 3 — "From Idea to Live App in 20 Minutes" (9:30 דקות)</div>
-                <div class="item-detail">&#9989; תסריט וידאו 4 — "What is Vibe Coding?" (6 דקות, awareness)</div>
+                <span class="item-title">לא רץ סשן לילי — Task Scheduler עדיין לא הוקם</span>
+                <div class="item-detail">הסשן האחרון (מס׳ 7) רץ בליל 13/04 וסיים את כל תוצרי ה-Kit שהיו בתור.</div>
             </div>
             <div class="item">
-                <span class="item-title">עדכוני מערכת</span>
-                <div class="item-detail">&#9989; task-queue.md — 4 משימות סומנו כ-done</div>
-                <div class="item-detail">&#9989; ROADMAP.md — עודכן עם כל ההתקדמות</div>
+                <span class="item-title">סיכום סשן 7 (ליל 13/04)</span>
+                <div class="item-detail">&#9989; Quick Start Guide — 627 שורות, 9 פרקים</div>
+                <div class="item-detail">&#9989; Deploy Playbook — 3 מסלולי deploy</div>
+                <div class="item-detail">&#9989; תסריט וידאו 3 — "From Idea to Live App in 20 Minutes"</div>
+                <div class="item-detail">&#9989; תסריט וידאו 4 — "What is Vibe Coding?"</div>
             </div>
         </div>
 
@@ -60,23 +59,24 @@
             <h2><span class="icon">&#128204;</span> סטטוס פרויקטים</h2>
             <div class="item">
                 <span class="item-title">The Biz / Sidebuild</span>
-                <span class="status status-progress">Wave 2 — בנייה (80%)</span>
-                <div class="item-detail">ה-kit כמעט מוכן. הושלם: 5 agents, CLAUDE.md, Quick Start Guide, Deploy Playbook, Idea Generator, Cheat Sheet (kit), Landing Page, 4 תסריטי וידאו. נותר: Cheat Sheet standalone + Lead Magnet PDF.</div>
+                <span class="status status-progress">Wave 2 — בנייה (85%)</span>
+                <div class="item-detail"><strong>מוכן:</strong> 5 agents, CLAUDE.md, Quick Start Guide, Deploy Playbook, Idea Generator, Cheat Sheet (kit), Landing Page, 4 תסריטי וידאו.</div>
+                <div class="item-detail"><strong>נותר:</strong> Cheat Sheet standalone + Lead Magnet PDF. אח״כ → deploy + תשלומים + הפצה.</div>
             </div>
             <div class="item">
                 <span class="item-title">Fund Compare / שווה</span>
-                <span class="status status-progress">פעיל</span>
-                <div class="item-detail">deployed. ממתין: העשרת תשואות + QA.</div>
+                <span class="status status-done">COMPLETED</span>
+                <div class="item-detail">הושלם 13/04. Netlify + GitHub data. עדכון יומי אוטומטי 06:00.</div>
             </div>
             <div class="item">
                 <span class="item-title">Quiflotz</span>
                 <span class="status status-done">v0-stable</span>
-                <div class="item-detail">GSAP + sounds. אין פעילות שוטפת.</div>
+                <div class="item-detail">GSAP + sounds עובדים. אין פעילות שוטפת.</div>
             </div>
             <div class="item">
                 <span class="item-title">SubTracker</span>
                 <span class="status status-todo">ממתין</span>
-                <div class="item-detail">v3.2.0 stable. Kotlin native. ממתין לסיבוב פיתוח.</div>
+                <div class="item-detail">v3.2.0 stable. Kotlin native על Fly.io. ממתין לסיבוב פיתוח.</div>
             </div>
         </div>
 
@@ -102,13 +102,17 @@
                 <span class="metric-label">סשנים שהושלמו</span>
                 <span class="metric-value">7</span>
             </div>
+            <div class="metric-row">
+                <span class="metric-label">ימים להשקה</span>
+                <span class="metric-value">~7 (יעד: 21/04)</span>
+            </div>
         </div>
 
         <div class="section">
             <h2><span class="icon">&#127919;</span> תוכנית להיום</h2>
             <div class="item">
-                <span class="item-title">1. סיום Kit — Cheat Sheet standalone</span>
-                <div class="item-detail">הרחבת הגרסה הקיימת למסמך עיצובי עצמאי.</div>
+                <span class="item-title">1. Cheat Sheet standalone</span>
+                <div class="item-detail">הרחבת הגרסה הקצרה מה-kit למסמך עיצובי עצמאי.</div>
             </div>
             <div class="item">
                 <span class="item-title">2. Lead Magnet — "30-item Vibe Coding Checklist"</span>
@@ -116,11 +120,11 @@
             </div>
             <div class="item">
                 <span class="item-title">3. Deploy Landing Page ל-Netlify</span>
-                <div class="item-detail">להעלות את דף הנחיתה המוכן לאוויר.</div>
+                <div class="item-detail">להעלות את דף הנחיתה של Sidebuild לאוויר.</div>
             </div>
             <div class="item">
-                <span class="item-title">4. חיבור תשלומים (צריך איתן)</span>
-                <div class="item-detail">Gumroad או LemonSqueezy — דורש הרשמה ידנית.</div>
+                <span class="item-title">4. הקמת Task Scheduler</span>
+                <div class="item-detail">כדי שסשנים לילים + דוח בוקר ירוצו אוטומטית.</div>
             </div>
         </div>
 
@@ -134,26 +138,26 @@
             <div class="item">
                 <span class="status status-alert">חשוב</span>
                 <span class="item-title"> Windows Task Scheduler עדיין לא הוקם</span>
-                <div class="item-detail">סשן לילי + דוח בוקר לא רצים אוטומטית.</div>
+                <div class="item-detail">סשנים לילים + דוח בוקר לא רצים אוטומטית.</div>
             </div>
             <div class="item">
                 <span class="status status-alert">blocked</span>
                 <span class="item-title"> חיבור תשלומים (Gumroad/LemonSqueezy)</span>
-                <div class="item-detail">צריך הרשמה ידנית של איתן + חשבון בנק/PayPal.</div>
+                <div class="item-detail">צריך הרשמה ידנית של איתן + חשבון PayPal.</div>
             </div>
             <div class="item">
                 <span class="status status-todo">תזכורת</span>
-                <span class="item-title"> GitHub Token פג ב-2026-05-10</span>
+                <span class="item-title"> GitHub Token פג ב-2026-05-10 (26 יום)</span>
             </div>
             <div class="item">
                 <span class="status status-todo">תזכורת</span>
-                <span class="item-title"> שלב Discuss — להערכה (החל מ-13/04)</span>
-                <div class="item-detail">לשאול את איתן אם שלב ה-Discuss עוזר או מיותר.</div>
+                <span class="item-title"> Cleanup + Scout — פג ב-10/04, צריך לרוץ</span>
+                <div class="item-detail">המחזור הדו-שבועי האחרון היה 27/03. הגיע הזמן.</div>
             </div>
         </div>
 
         <footer>
-            Generated by Adam &middot; ABC-TOM System v8 &middot; 13/04/2026 morning
+            Generated by Adam &middot; ABC-TOM System v8 &middot; 14/04/2026 morning
         </footer>
     </div>
 </body>
